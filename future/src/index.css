@@ -9,11 +9,14 @@ body, html, #root, .App {
 .App-header {
   background-color: #282c34;
   height: 60px;
-  
   color: white;
 }
 .welcoming{
   padding-left: 2rem;
+}
+.descreption{
+  padding-left: 2rem;
+  font-size: 1.2rem;
 }
 .App-footer{
   background-color: #282c34;
