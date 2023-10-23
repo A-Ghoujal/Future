@@ -19,7 +19,7 @@ function App() {
 
       <section className="App-section">Online Advertising</section>
       
-      <footer className="App-footer">Footer</footer>
+      <footer className="App-footer">Footer </footer>
     </div>
   );
 }
