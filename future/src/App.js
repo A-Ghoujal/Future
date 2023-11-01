@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { adjustSvgForMobile } from './helpers';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    adjustSvgForMobile();
+    window.addEventListener('resize', adjustSvgForMobile);
+
+    return () => window.removeEventListener('resize', adjustSvgForMobile);
+  }, []);
+  
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className='welcoming'>Welcome to <br></br>BOOST My Business Agency</h1>
+      <div className="logo" ></div>
+      
+      <svg id="welcome-svg"  preserveAspectRatio="xMidYMid meet">
+        <text x="50%" y="50%" text-anchor="middle">
+        Welcome to BOOST My Business Agency
+        </text>
+      </svg>
         <h2 className='descreption'>We will take care of your online brand from A to Z.</h2>
       </header>
 
@@ -24,4 +38,6 @@ function App() {
   );
 }
 
+
 export default App;
+
