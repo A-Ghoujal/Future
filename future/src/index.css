@@ -5,6 +5,24 @@ body, html, #root, .App {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@import "https://unpkg.com/transition-style/transition.hackpack.min.css";
+
+@keyframes swoopy {
+  from {
+    clip-path: var(--circle-top-right-out);
+  }
+  to {
+    clip-path: var(--circle-bottom-right-in);
+  }
+}
+
+.App-header > div[transition-style="in:custom:swoopy"] {
+  --transition__duration: 10s;
+  animation-name: swoopy;
+  background: hsl(0, 0%, 0%);
+  height: 100vh;
+}
+
 
 ._carousel {
   scroll-snap-type: y mandatory;
@@ -20,15 +38,78 @@ body, html, #root, .App {
   overflow: hidden; 
 }
 
-
-.App-header {
-  background-color: #282c34;
-  height: 60px;
-  color: white;
+.arrows {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
 }
 
-.welcoming{
-  padding-left: 2rem;
+.indicator {
+  position: absolute;
+  bottom: 10%;  /* Adjust this value if needed */
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%) rotate(45deg);
+}
+
+
+.indicator span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  animation: animate 1s linear infinite;
+}
+
+.indicator span:nth-child(1) {
+  top: -30px;
+  left: -30px;
+  animation-delay: 0s;
+}
+.indicator span:nth-child(2) {
+  top: -15px;
+  left: -15px;
+  animation-delay: 0.2s;
+}
+.indicator span:nth-child(3) {
+  top: -0px;
+  left: -0px;
+  animation-delay: 0.4s;
+}
+.indicator span:nth-child(4) {
+  top: 15px;
+  left: 15px;
+  animation-delay: 0.6s;
+}
+.indicator span:nth-child(5) {
+  top: 30px;
+  left: 30px;
+  animation-delay: 0.8s;
+}
+
+@keyframes animate {
+  0% {
+    border-color: #fff;
+    transform: translate(0, 0);
+  }
+  20% {
+    border-color: #fff;
+    transform: translate(15px, 15px);
+  }
+  20.1%,
+  100% {
+    border-color: #222;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
@@ -76,12 +157,6 @@ stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 }
 
 
-.description{
-  padding-left: 2rem;
-  font-size: 1.2rem;
-  margin: 3rem  auto;
-
-}
 .App-footer{
   background-color: #282c34;
   height: 60px;
