@@ -20,7 +20,7 @@ function App() {
         Welcome to BOOST My Business Agency
         </text>
       </svg>
-        <h2 className='descreption'>We will take care of your online brand from A to Z.</h2>
+        <h2 className='description'>We will take care of your online brand from A to Z.</h2>
       </header>
 
       <section className="App-section">Create Your Online Logo Brand</section>
