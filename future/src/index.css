@@ -6,6 +6,21 @@ body, html, #root, .App {
   -moz-osx-font-smoothing: grayscale;
 }
 
+._carousel {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh; 
+}
+
+._carousel .App-section, 
+._carousel header, 
+._carousel footer {
+  scroll-snap-align: start;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+
 .App-header {
   background-color: #282c34;
   height: 60px;
@@ -34,7 +49,12 @@ svg text {
 }
 @media (max-width: 768px) {
   svg text {
-      font-size: 30px; 
+      font-size: 28px; 
+  }
+}
+@media (max-width: 368px) {
+  svg text {
+      font-size: 22px; 
   }
 }
 

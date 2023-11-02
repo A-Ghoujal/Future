@@ -6,11 +6,11 @@ function App() {
   useEffect(() => {
     adjustSvgForMobile();
     window.addEventListener('resize', adjustSvgForMobile);
-
     return () => window.removeEventListener('resize', adjustSvgForMobile);
   }, []);
   
   return (
+    <div className='_carousel'>
     <div className="App">
       <header className="App-header">
       <div className="logo" ></div>
@@ -34,6 +34,7 @@ function App() {
       <section className="App-section">Online Advertising</section>
       
       <footer className="App-footer">Footer </footer>
+    </div>
     </div>
   );
 }
