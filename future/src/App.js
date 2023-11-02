@@ -16,7 +16,7 @@ function App() {
             <div className="logo"></div>
             <svg id="welcome-svg" preserveAspectRatio="xMidYMid meet">
               <text x="50%" y="50%" text-anchor="middle">
-                Welcome to Agency BOOST My Business
+                Welcome to BOOST My Business Agency
               </text>
               </svg>
               <div className='arrows'>

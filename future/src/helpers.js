@@ -6,10 +6,10 @@ export function adjustSvgForMobile() {
   
     if (screenWidth <= 768) { 
         svgText.setAttribute('y', '40%');
-        svgText.innerHTML = 'Welcome to <tspan x="50%" dy="1.2em">Agency</tspan><tspan x="50%" dy="1.2em">BOOST My Business</tspan>';
+        svgText.innerHTML = 'Welcome to <tspan x="50%" dy="1.2em">BOOST My Business</tspan><tspan x="50%" dy="1.2em">Agency</tspan>';
     } else { 
         svgText.setAttribute('y', '50%');
-        svgText.textContent = 'Welcome to Agency BOOST My Business';
+        svgText.textContent = 'Welcome to BOOST My Business Agency';
     }
   }
   
