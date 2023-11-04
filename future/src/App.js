@@ -30,7 +30,9 @@ function App() {
     </div>
           </div>
         </header> 
-        <section className="App-section">We Will Go Through 5 Steps</section>
+        <section className="App-section">
+          <h1 className='h1s1'>We Will Go Through 5 Steps</h1>
+        </section>
         <section className="App-section">Create Your Online Logo Brand</section>
         <section className="App-section">Create Your Own Website</section>
         <section className="App-section">Create Your Social Media</section>
