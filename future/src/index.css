@@ -5,6 +5,8 @@ body, html, #root, .App {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* scrolling */
 @import "https://unpkg.com/transition-style/transition.hackpack.min.css";
 
 @keyframes swoopy {
@@ -37,6 +39,8 @@ body, html, #root, .App {
   height: 100vh; 
   overflow: hidden; 
 }
+
+/* indicator */
 
 .arrows {
   margin: 0;
@@ -112,6 +116,7 @@ body, html, #root, .App {
   }
 }
 
+/* hero title animation */
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 svg {
@@ -156,6 +161,7 @@ stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 }
 }
 
+/* footer */
 
 .App-footer{
   background-color: #282c34;
