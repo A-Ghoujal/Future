@@ -1,7 +1,11 @@
-body, html, #root, .App {
+body,
+html,
+#root,
+.App {
   height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,19 +29,18 @@ body, html, #root, .App {
   height: 100vh;
 }
 
-
 ._carousel {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
-  height: 100vh; 
+  height: 100vh;
 }
 
-._carousel .App-section, 
-._carousel header, 
+._carousel .App-section,
+._carousel header,
 ._carousel footer {
   scroll-snap-align: start;
-  height: 100vh; 
-  overflow: hidden; 
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* indicator */
@@ -53,13 +56,12 @@ body, html, #root, .App {
 
 .indicator {
   position: absolute;
-  bottom: 10%;  /* Adjust this value if needed */
+  bottom: 10%; /* Adjust this value if needed */
   left: 50%;
   width: 30px;
   height: 30px;
   transform: translate(-50%) rotate(45deg);
 }
-
 
 .indicator span {
   position: absolute;
@@ -120,55 +122,137 @@ body, html, #root, .App {
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 svg {
-    font-family: "Russo One", sans-serif;
-    width: 100%;
-    height: 100%;
-    display: block;
+  font-family: "Russo One", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 svg text {
-    animation: stroke 5s forwards;
-    stroke-width: 2;
-    stroke: #2023bb;
-    font-size: 4vw;
-    counter-reset: non-scaling-stroke;
+  animation: stroke 5s forwards;
+  stroke-width: 2;
+  stroke: #2023bb;
+  font-size: 4vw;
+  counter-reset: non-scaling-stroke;
 }
 @media (max-width: 768px) {
   svg text {
-      font-size: 28px; 
+    font-size: 28px;
   }
 }
 @media (max-width: 368px) {
   svg text {
-      font-size: 22px; 
+    font-size: 22px;
   }
 }
 
- @keyframes stroke {
-0%   {
-fill: rgba(72,138,204,0);
-stroke: #ffffff;
-stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-}
-70%  {fill: rgba(72,138,204,0);
-stroke: #ffffff }
-80%  {fill: rgba(72,138,204,0);
-stroke: #ffffff; stroke-width: 3; }
-100% {
-fill: #ffffff;
-stroke: #ffffff;
-stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: #ffffff;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: #ffffff;
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: #ffffff;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #ffffff;
+    stroke: #ffffff;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
 
 /* section 1  */
 
+.sectionh2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #212121;
+  color:white;
+}
 
-  
+.card {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 4px;
+  background: #212121;
+  display: flex;
+  gap: 5px;
+}
+
+.card p {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: #212121;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+.card p .description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .5s ease;
+  pointer-events: none;
+}
+
+.card p:hover .description {
+  opacity: 1;
+}
+
+.card p:hover {
+  flex: 4;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s, top .5s;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  letter-spacing: .1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.card p:hover span {
+  transform: rotate(0) translate(-50%, -50%);
+  top: 5rem;
+  left: 50%;
+}
+
 
 /* footer */
 
-.App-footer{
+.App-footer {
   background-color: #282c34;
   height: 60px;
   display: flex;
