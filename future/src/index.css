@@ -185,7 +185,6 @@ svg text {
 .card {
   width: 100vw;
   height: 100vh;
-  border-radius: 4px;
   background: #212121;
   display: flex;
   gap: 5px;
