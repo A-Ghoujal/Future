@@ -118,7 +118,7 @@ html,
   }
 }
 
-/* hero title animation */
+/* section 1 hero title animation  */
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 svg {
@@ -172,14 +172,14 @@ svg text {
   }
 }
 
-/* section 1  */
+/* section 2  */
 
 .sectionh2 {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   background-color: #212121;
-  color:white;
+  color: white;
 }
 
 .card {
@@ -195,13 +195,13 @@ svg text {
   overflow: hidden;
   cursor: pointer;
   border-radius: 2px;
-  transition: all .5s;
+  transition: all 0.5s;
   background: #212121;
   border: 1px solid #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
+  position: relative;
 }
 .card p .description {
   position: absolute;
@@ -215,7 +215,7 @@ svg text {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
   pointer-events: none;
 }
 
@@ -229,13 +229,15 @@ svg text {
 
 .card p span {
   min-width: 14em;
-  padding: .5em;
+  padding: 0.5em;
   text-align: center;
   transform: rotate(-90deg);
-  transition: all .5s, top .5s;
+  transition:
+    all 0.5s,
+    top 0.5s;
   text-transform: uppercase;
   color: #fcfcfc;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -248,22 +250,21 @@ svg text {
   left: 50%;
 }
 
-/* section 2  */
+/* section 3  */
 
- .h3section { 
+.h3section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1.5rem;
 }
-.p3section{
+.p3section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  
 }
 .container_card {
   width: 480px;
@@ -278,7 +279,6 @@ svg text {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  
 }
 
 .logo_card {
@@ -290,19 +290,19 @@ svg text {
   transform-style: preserve-3d;
   border-radius: 2rem;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: center; 
-  text-align: center; 
-  
+  justify-content: center;
+  text-align: center;
 }
 
-.container_card:hover > .logo_card{
+.container_card:hover > .logo_card {
   cursor: pointer;
   transform: rotateY(180deg) rotateZ(180deg);
 }
 
-.front, .back  {
+.front,
+.back {
   height: 100%;
   width: 100%;
   border-radius: 2rem;
@@ -320,42 +320,42 @@ svg text {
 
 .back {
   transform: rotateY(180deg) rotateZ(180deg);
-  background-image: url('../assets/1.PNG');
-  background-size: cover; 
+  background-image: url("../assets/1.PNG");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.back_heading, .front_heading {
+.back_heading,
+.front_heading {
   font-size: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  
 }
 @media (max-width: 630px) {
-    
-    
-    .container_card {
-      margin: auto;
-      width: 15rem;
-      height: 16rem;
-    }
-    
-    .card_logo_section {
-      flex-direction: column;
-      gap: 2rem;
-      
-    }
-    
+  .container_card {
+    margin: auto;
+    width: 15rem;
+    height: 16rem;
+  }
+
+  .card_logo_section {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 @media (max-width: 1177px) {
   .card_logo_section {
-    margin:  auto;
+    margin: auto;
   }
   .container_card {
     min-width: 333px;
   }
-  }
+}
+
+/* section 4 */
+
 
 /* footer */
 
