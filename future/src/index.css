@@ -255,7 +255,7 @@ svg text {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 1.5rem;
 }
 .p3section{
   position: relative;
@@ -333,12 +333,9 @@ svg text {
   
 }
 @media (max-width: 630px) {
-    .h3section {
-      margin: 2rem;
-    }
+    
     
     .container_card {
-      
       margin: auto;
       width: 15rem;
       height: 16rem;
@@ -347,12 +344,13 @@ svg text {
     .card_logo_section {
       flex-direction: column;
       gap: 2rem;
+      
     }
     
 }
 @media (max-width: 1177px) {
   .card_logo_section {
-    margin: 0 2rem;
+    margin:  auto;
   }
   .container_card {
     min-width: 333px;

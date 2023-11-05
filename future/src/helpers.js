@@ -9,7 +9,7 @@ export function adjustSvgForMobile() {
         svgText.innerHTML = 'Welcome to <tspan x="50%" dy="1.2em">BOOST My Business</tspan><tspan x="50%" dy="1.2em">Agency</tspan>';
     } else { 
         svgText.setAttribute('y', '50%');
-        svgText.textContent = 'Welcome to BOOST My Business Agency';
+        svgText.textContent = 'Welcome to BOOST MY BUSNIESS Agency';
     }
   }
   

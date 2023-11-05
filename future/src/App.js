@@ -71,8 +71,7 @@ Your logo is more than just an image, it's the heart of your brand's identity.
  A compelling logo captures attention,</p>
     </div>
     <div className="back">
-      <p className="back_heading">Back card</p>
-      <p>Follow Me For More</p>
+      
     </div>
   </div>
 </div>
@@ -85,8 +84,7 @@ Your logo is more than just an image, it's the heart of your brand's identity.
 Ignite Your Brand's Presence Invest in a Logo That Lasts.</p>
     </div>
     <div className="back">
-      <p className="back_heading">Back card</p>
-      <p>Follow Me For More</p>
+    
     </div>
   </div>
 </div>
