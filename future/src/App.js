@@ -65,13 +65,13 @@ function App() {
  <div className="container_card">
   <div className="logo_card">
     <div className="front">
-      <p className="front-heading">Front card</p>
+      <p className="front_heading">Front card</p>
       <p className="p3section">Elevate Your Brand with a Logo That Speaks Volumes
 Your logo is more than just an image, it's the heart of your brand's identity.
  A compelling logo captures attention,</p>
     </div>
     <div className="back">
-      <p className="back-heading">Back card</p>
+      <p className="back_heading">Back card</p>
       <p>Follow Me For More</p>
     </div>
   </div>
@@ -79,13 +79,13 @@ Your logo is more than just an image, it's the heart of your brand's identity.
 <div className="container_card">
   <div className="logo_card">
     <div className="front">
-      <p className="front-heading">Front card</p>
+      <p className="front_heading">Front card</p>
       <p className="p3section">
    Let's create a visual signature that propels your business forward and keeps it in the minds of your customers.
 Ignite Your Brand's Presence Invest in a Logo That Lasts.</p>
     </div>
     <div className="back">
-      <p className="back-heading">Back card</p>
+      <p className="back_heading">Back card</p>
       <p>Follow Me For More</p>
     </div>
   </div>
