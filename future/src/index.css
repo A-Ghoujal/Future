@@ -303,7 +303,7 @@ svg text {
   transform: rotateY(180deg) rotateZ(180deg);
 }
 
-.front, .back {
+.front, .back  {
   height: 100%;
   width: 100%;
   border-radius: 2rem;
@@ -323,6 +323,10 @@ svg text {
 
 .back {
   transform: rotateY(180deg) rotateZ(180deg);
+  background-image: url('../assets/1.PNG');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .back-heading, .front-heading {
