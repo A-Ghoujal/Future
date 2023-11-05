@@ -58,7 +58,42 @@ function App() {
     </div>
       </section>
 
-      <section className="App-section">Create Your Online Logo Brand</section>
+      <section className="App-section">
+      <div className="sectionh3">
+  <h3 className="h3section">Create Your Online Logo Brand</h3>
+ <div className="card_logo_section">
+ <div className="container_card">
+  <div className="logo_card">
+    <div className="front">
+      <p className="front-heading">Front card</p>
+      <p className="p3section">Elevate Your Brand with a Logo That Speaks Volumes
+Your logo is more than just an image, it's the heart of your brand's identity.
+ A compelling logo captures attention,</p>
+    </div>
+    <div className="back">
+      <p className="back-heading">Back card</p>
+      <p>Follow Me For More</p>
+    </div>
+  </div>
+</div>
+<div className="container_card">
+  <div className="logo_card">
+    <div className="front">
+      <p className="front-heading">Front card</p>
+      <p className="p3section">
+   Let's create a visual signature that propels your business forward and keeps it in the minds of your customers.
+Ignite Your Brand's Presence Invest in a Logo That Lasts.</p>
+    </div>
+    <div className="back">
+      <p className="back-heading">Back card</p>
+      <p>Follow Me For More</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
       <section className="App-section">Create Your Own Website</section>
       <section className="App-section">Create Your Social Media</section>
       <section className="App-section"> Create Your Google Business Account</section>
