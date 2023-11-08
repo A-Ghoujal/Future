@@ -8,6 +8,7 @@ html,
     "Helvetica Neue", Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 /* scrolling */
@@ -251,98 +252,106 @@ svg text {
 }
 
 /* section 3  */
-
 .h3section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1.5rem;
+  font-size: 5rem;
 }
-.p3section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.swiper-slide {
   color: #ffffff;
-}
-.container_card {
-  width: 480px;
-  height: 650px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+ 
 }
 
-.card_logo_section {
-  display: flex;
-  justify-content: center;
-  gap: 10rem;
+.swiper-slide .title {
+  font-size: 90px;
+  font-weight: 650;
 }
 
-.logo_card {
-  height: 100%;
-  width: 100%;
-  background-color: aliceblue;
-  position: relative;
-  transition: transform 1500ms;
-  transform-style: preserve-3d;
-  border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.swiper-slide .subtitle {
+  font-size: 21px;
 }
 
-.container_card:hover > .logo_card {
-  cursor: pointer;
-  transform: rotateY(180deg) rotateZ(180deg);
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
 }
-
-.front,
-.back {
-  height: 100%;
-  width: 100%;
-  border-radius: 2rem;
+.logo-container{
+  height: 35rem;
+}
+.background_logo_img1{
+  background-image: url(../assets/3.jpg);
   position: absolute;
-  box-shadow: 0 0 10px 2px rgba(50, 50, 50, 2.5);
-  backface-visibility: hidden;
-  color: aliceblue;
-  background: black;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.back {
-  transform: rotateY(180deg) rotateZ(180deg);
-  background-image: url("../assets/1.PNG");
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.background_logo_img2{
+  background-image: url(../assets/4.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
   background-position: center;
 }
-
-.back_heading,
-.front_heading {
-  font-size: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
+.background_logo_img3{
+  background-image: url(../assets/2.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.p_logo{
+  font-size: 23px;
+  background-color: rgba(96, 96, 96, 0.5); 
+  border-radius: 15px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 @media (max-width: 630px) {
   .container_card {
     margin: auto;
     width: 15rem;
-    height: 16rem;
+    height: 32rem;
   }
-
+  .logo-container{
+    height: 22rem;
+  }
   .card_logo_section {
     flex-direction: column;
     gap: 2rem;
+  }
+  .h3section{
+    font-size: 2.5rem;
+  }
+  .swiper-slide .title {
+    font-size: 35px;
+  }
+  .background_logo_img1,
+  .background_logo_img2,
+  .background_logo_img3 {
+    background-size: 160%; 
+    background-position: top center; 
+  }
+  .p_logo{
+    font-size: 15px;
   }
 }
 @media (max-width: 1177px) {
@@ -369,5 +378,5 @@ svg text {
 }
 
 .App-section:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: #9e9e9e;
 }
