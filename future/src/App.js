@@ -40,7 +40,7 @@ function App() {
       {/* section 2 */}
       <section className="App-section">
         <div className="sectionh2">
-          <h3 className="h2section">Here you can take a quick look</h3>
+          <h3 className="h2section">Here Are The 5 Steps For Your Online Branding</h3>
         </div>
         <div className="card">
           <p>
