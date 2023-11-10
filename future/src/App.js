@@ -13,7 +13,23 @@ function App() {
     window.addEventListener("resize", adjustSvgForMobile);
     return () => window.removeEventListener("resize", adjustSvgForMobile);
   }, []);
-
+  const images = [
+    './assets/11.PNG',
+    './assets/22.PNG',
+    './assets/44.PNG',
+    './assets/55.PNG',
+    './assets/66.PNG',
+    './assets/77.PNG',
+    './assets/88.PNG',
+    './assets/99.PNG',
+    './assets/00.PNG',
+  ];
+  const galleryItems = images.concat(images).map((image, index) => (
+    <div className="gallery-item" key={index}>
+      <img src={image} alt={`Gallery item ${index + 1}`} />
+    </div>
+    ));
+   
   return (
     // section 1
     <div className="_carousel">
@@ -140,7 +156,28 @@ function App() {
       </section>
       
       {/* section 4 */}
-      <section className="App-section">Create Your Own Website</section>
+      <section className="App-section">
+      <div className="app-website">
+  <div className="gallery">
+    <div className="gallery-inner">{galleryItems}</div>
+  </div>
+  <div className="title_create_website">
+    <h1 className="title_create_website_">Create Your Own Website</h1>
+    <p className="title_create_website__">
+      Expand your business horizons with your own website!
+      It's the key to unlocking a global audience, available 24/7,
+      and it simplifies customer engagement. In the digital era,
+      a website is your business's beacon, guiding customers right to your doorstep.
+      Embrace the power of the web and watch your business soar!
+    </p>
+  </div>
+  <div className="gallery_right">
+    <div className="gallery-inner_right">{galleryItems}</div>
+  </div>
+</div>
+
+
+      </section>
       <section className="App-section">Create Your Social Media</section>
       <section className="App-section">Create Your Google Business Account</section>
       <section className="App-section">Online Advertising</section>
