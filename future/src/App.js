@@ -103,7 +103,6 @@ function App() {
         className="mySwiper"
       >
         
-       
         <SwiperSlide>
           <div className="logo-container">
           <div className="background_logo_img1"></div>
@@ -175,10 +174,39 @@ function App() {
     <div className="gallery-inner_right">{galleryItems}</div>
   </div>
 </div>
-
-
       </section>
-      <section className="App-section">Create Your Social Media</section>
+
+       {/* section 5 */}
+      <section className="App-section">
+      <div className="app-socials">
+
+      <div className="container_socials">
+      <div className="content-block_socials image-left">
+  <div className="image_socials"><img className="image_socials_logo" src="/assets/3d1.png" alt="TikTok Logo" /></div>
+  <div className="text_socials">
+    "Leverage TikTok's viral potential to showcase your products in creative short videos. Its algorithm can propel your content to a wide audience."
+  </div>
+</div>
+<div className="content-block_socials image-right">
+  <div className="text_socials">
+    "Utilize Facebook's vast user base to target potential customers effectively. Through Facebook ads and community engagement, you can create a loyal customer base."
+  </div>
+  <div className="image_socials"><img className="image_socials_logo" src="/assets/3d2.PNG" alt="Facebook Logo" /></div>
+</div>
+<div className="content-block_socials image-left">
+  <div className="image_socials"><img className="image_socials_logo" src="/assets/3d3.png" alt="Instagram Logo" /></div>
+  <div className="text_socials">
+    "Instagram's visually-driven platform is perfect for highlighting your products with high-quality images and stories. Engage with your audience through influencers."
+  </div>
+</div>
+
+</div>
+
+
+        </div>
+        </section>
+
+
       <section className="App-section">Create Your Google Business Account</section>
       <section className="App-section">Online Advertising</section>
       <footer className="App-footer">Footer </footer>
