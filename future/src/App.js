@@ -207,7 +207,13 @@ function App() {
         </section>
 
 
-      <section className="App-section">Create Your Google Business Account</section>
+      <section className="App-section">
+        <div className="google_section">
+        Create Your Google Business Account
+        </div>
+        </section>
+
+
       <section className="App-section">Online Advertising</section>
       <footer className="App-footer">Footer </footer>
     </div>
