@@ -13,6 +13,17 @@ export function adjustSvgForMobile() {
     }
   }
   
+  document.querySelectorAll('.card p').forEach(item => {
+    item.addEventListener('click', function() {
+      // Reset all sections to their default state
+      document.querySelectorAll('.card p').forEach(section => {
+        section.style.backgroundSize = 'cover';
+      });
+  
+      // Scale up the clicked section
+      this.style.backgroundSize = '110%';
+    });
+  });
   
   
   

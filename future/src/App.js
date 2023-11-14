@@ -59,25 +59,29 @@ function App() {
           <h3 className="h2section">Here Are The 5 Steps For Your Online Branding</h3>
         </div>
         <div className="card">
-          <p>
+          <p className="logo-background_one">
             <span>Logo</span>
-            <div className="description">Description for Logo</div>
+            <div className="description">A logo is vital for a store brand as it creates a memorable first impression,
+             symbolizes the store's identity, and enhances brand recognition. It builds trust,
+              signifies professionalism, and ensures consistency across marketing platforms.
+               Essentially, a logo is more than just an image,
+             it's a key element that communicates the essence and values of a brand to customers.</div>
           </p>
-          <p>
+          <p className="logo-background_two">
             <span>Website</span>
             <div className="description">Description for Website</div>
           </p>
-          <p>
+          <p className="logo-background_three">
             <span>Social Media</span>
             <div className="description">Description for Social Media</div>
           </p>
-          <p>
+          <p className="logo-background_four">
             <span>GBA</span>
             <div className="description">
               Description for Google Business Account
             </div>
           </p>
-          <p>
+          <p className="logo-background_five">
             <span>Ads</span>
             <div className="description">Description for Ads</div>
           </p>
