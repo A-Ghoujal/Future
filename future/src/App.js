@@ -69,28 +69,37 @@ function App() {
           </p>
           <p className="logo-background_two">
             <span>Website</span>
-            <div className="description">Description for Website</div>
+            <div className="description">Expand your business horizons with your own website! It's the key to unlocking a global audience,
+             available 24/7, and it simplifies customer engagement. In the digital era, 
+             a website is your business's beacon, guiding customers right to your doorstep.
+              Embrace the power of the web and watch your business soar!</div>
           </p>
           <p className="logo-background_three">
             <span>Social Media</span>
-            <div className="description">Description for Social Media</div>
+            <div className="description">Social media accounts are crucial for businesses, 
+            offering a platform for direct customer engagement, brand promotion, and market insight.
+             They enable real-time communication, foster brand identity, and provide valuable analytics.
+              In today's digital era, social media presence is key to enhancing customer relationships and driving business growth.</div>
           </p>
           <p className="logo-background_four">
             <span>GBA</span>
             <div className="description">
-              Description for Google Business Account
+            Having a Google Business account is crucial for enhancing a store or business's online visibility and local search presence.
+             It offers an effective way to display key information, manage customer reviews,
+             and gain insights into customer behavior, playing a significant role in boosting credibility and customer engagement.
             </div>
           </p>
           <p className="logo-background_five">
             <span>Ads</span>
-            <div className="description">Description for Ads</div>
+            <div className="description">Advertising is key for businesses, enhancing brand visibility, reaching new customers, and driving sales.
+             It's essential for market differentiation and long-term success, making it a fundamental component of business growth.</div>
           </p>
         </div>
       </section>
 
       {/* section 3  */}
       <section className="App-section">
-          <h3 className="h3section">Create Your Online Logo Brand</h3>
+          <h3 className="h3section">Online Logo Brand</h3>
           <>
       <Swiper
         style={{
@@ -165,7 +174,7 @@ function App() {
     <div className="gallery-inner">{galleryItems}</div>
   </div>
   <div className="title_create_website">
-    <h1 className="title_create_website_">Create Your Own Website</h1>
+    <h1 className="title_create_website_">Your Own Website</h1>
     <p className="title_create_website__">
       Expand your business horizons with your own website!
       It's the key to unlocking a global audience, available 24/7,
@@ -213,7 +222,7 @@ function App() {
 
       <section className="App-section">
         <div className="google_section">
-        Create Your Google Business Account
+        Google Business Account
         </div>
         </section>
 
