@@ -192,7 +192,6 @@ function App() {
        {/* section 5 */}
       <section className="App-section">
       <div className="app-socials">
-
       <div className="container_socials">
       <div className="content-block_socials image-left">
   <div className="image_socials"><img className="image_socials_logo" src="/assets/3d1.png" alt="TikTok Logo" /></div>
@@ -212,18 +211,35 @@ function App() {
     "Instagram's visually-driven platform is perfect for highlighting your products with high-quality images and stories. Engage with your audience through influencers."
   </div>
 </div>
-
 </div>
-
-
-        </div>
-        </section>
+ </div>
+</section>
 
 
       <section className="App-section">
         <div className="google_section">
-        Google Business Account
+          <div className="gba_title">
+            .Google<br></br>..Business<br></br>....Account
+            </div>
+            <Swiper
+        slidesPerView={'auto'}
+        centeredSlides={true}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper_google"
+      >
+        <SwiperSlide className="google_slide"><div className="background_google_img1"></div></SwiperSlide>
+        <SwiperSlide className="google_slide"><div className="background_google_img2"></div></SwiperSlide>
+        <SwiperSlide className="google_slide"><div className="background_google_img3"></div></SwiperSlide>
+        <SwiperSlide className="google_slide"><div className="background_google_img4"></div></SwiperSlide>
+      </Swiper>
         </div>
+        
         </section>
 
 

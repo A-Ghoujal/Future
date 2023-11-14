@@ -10,6 +10,7 @@ html,
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   scroll-behavior: smooth;
+  font-family: Space Grotesk;
 }
 
 /* scrolling */
@@ -508,10 +509,10 @@ svg text {
 .title_create_website_ {
   font-size: 3.5rem;
   text-align: center;
-  font-family: Space Grotesk;
+ 
 }
 .title_create_website__ {
-  font-family: Space Grotesk;
+ 
   font-size: 1.2rem;
   line-height: 2; 
   word-spacing: 2px;
@@ -555,6 +556,7 @@ svg text {
 .app-socials{
   position: relative;
 }
+
 .container_socials{
   width: 100%;
   height: 100%;
@@ -604,6 +606,11 @@ svg text {
   .text_socials {
     font-size: 0.8rem;
   }
+  .title_social{
+    font-size: 2rem;
+    filter: blur(1px);
+    color: #0000007c;
+  }
 }
 
 /* section 6 */
@@ -612,6 +619,53 @@ svg text {
   position: relative;
   width: 100%;
   height: 100%;
+}
+.gba_title{
+  position: relative;
+display: flex;
+margin-top: 2rem;
+font-size: 48px;
+}
+.mySwiper_google{
+    width: 60%;
+    height: 60%;
+    color: #000000;
+    
+}
+.google_slide{
+  text-align: center;
+  font-size: 18px;
+  background: #76767600;
+  display: flex;
+ 
+  border: 1px solid #000000;
+}
+.swiper-slide_google img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.background_google_img1{
+  background-image: url(../public/assets/323.PNG);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.background_google_img2{
+  background-image: url(../public/assets/325.PNG);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* footer */
 
