@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect } from "react";
 import { adjustSvgForMobile } from "./helpers";
 import "./App.css";
