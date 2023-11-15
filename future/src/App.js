@@ -221,23 +221,10 @@ function App() {
           <div className="gba_title">
             .Google<br></br>..Business<br></br>....Account
             </div>
-            <Swiper
-        slidesPerView={'auto'}
-        centeredSlides={true}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper_google"
-      >
-        <SwiperSlide className="google_slide"><div className="background_google_img1"></div></SwiperSlide>
-        <SwiperSlide className="google_slide"><div className="background_google_img2"></div></SwiperSlide>
-        <SwiperSlide className="google_slide"><div className="background_google_img3"></div></SwiperSlide>
-        <SwiperSlide className="google_slide"><div className="background_google_img4"></div></SwiperSlide>
-      </Swiper>
+            <div className="google_image_one"><img className="img_one_google" src="/assets/300.jpeg"></img></div>
+            <div className="google_image_two"><img className="img_two_google" src="/assets/301.jpeg"></img></div>
+            <div className="google_image_three"><img className="img_three_google" src="/assets/302.png"></img></div>
+            <div className="google_image_four"><img className="img_four_google" src="/assets/303.png"></img></div>
         </div>
         
         </section>
