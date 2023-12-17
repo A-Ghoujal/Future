@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { adjustSvgForMobile } from "./helpers";
 import "./App.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -31,6 +32,34 @@ function App() {
     </div>
     ));
    
+    const GoogleSection = () => {
+      const [activeImage, setActiveImage] = useState(null);
+    
+      const handleTextClick = (imageName, event) => {
+        event.stopPropagation(); 
+        setActiveImage(imageName === activeImage ? null : imageName);
+      };
+    
+      const closeImage = () => {
+        setActiveImage(null);
+      };
+    
+      useEffect(() => {
+        const handleClickOutside = (event) => {
+          const isOutsideImage = !event.target.closest('.image-container');
+          const isOutsideExitButton = !event.target.closest('.exit_button');
+    
+          if (isOutsideImage && isOutsideExitButton) {
+            closeImage();
+          }
+        };
+    
+        document.addEventListener('click', handleClickOutside);
+    
+        return () => {
+          document.removeEventListener('click', handleClickOutside);
+        };
+      }, []);
   return (
     // section 1
     <div className="_carousel">
@@ -217,23 +246,55 @@ function App() {
 </section>
 
 {/* section 6 */}
-      <section className="App-section">
-        <div className="google_section">
-          <div className="gba_title">
-            .Google<br></br>..Business<br></br>....Account
-            </div>
-            <div className="google_image_one"><img className="img_one_google" src="/assets/300.jpeg"></img></div>
-            <div className="google_image_two"><img className="img_two_google" src="/assets/301.jpeg"></img></div>
-            <div className="google_image_three"><img className="img_three_google" src="/assets/302.png"></img></div>
-            <div className="google_image_four"><img className="img_four_google" src="/assets/303.png"></img></div>
-        </div>
-        </section>
+<section className="App-section">
+  <div className="google_section">
+    <div className="gba_title">
+      .Google<br></br>..Business<br></br>....Account
+    </div>
+    <div
+      className={`text_one ${activeImage === "text1" ? "hidden" : ""}`}
+      onClick={(event) => handleTextClick("text1", event)}
+    >
+      {activeImage !== "text1" && "Increased Visibility"}
+      {activeImage === "text1" && (
+        <img className="img_one_google" src="/assets/300.jpeg" alt="Image 1" />
+      )}
+    </div>
+    <div
+      className={`text_two ${activeImage === "text2" ? "hidden" : ""}`}
+      onClick={(event) => handleTextClick("text2", event)}
+    >
+      {activeImage !== "text2" && "Customer Reviews and Ratings"}
+      {activeImage === "text2" && (
+        <img className="img_two_google" src="/assets/301.jpeg" alt="Image 2" />
+      )}
+    </div>
+    <div
+      className={`text_three ${activeImage === "text3" ? "hidden" : ""}`}
+      onClick={(event) => handleTextClick("text3" , event)}
+    >
+      {activeImage !== "text3" && "Your store location"}
+      {activeImage === "text3" && (
+        <img className="img_three_google" src="/assets/302.png" alt="Image 3" />
+      )}
+    </div>
+    <div
+      className={`text_four ${activeImage === "text4" ? "hidden" : ""}`}
+      onClick={(event) => handleTextClick("text4", event)}
+    >
+      {activeImage !== "text4" && "Insights and Analytics"}
+      {activeImage === "text4" && (
+        <img className="img_four_google" src="/assets/303.png" alt="Image 4" />
+      )}
+    </div>
+  </div>
+</section>
 
 {/* section 7 */}
       <section className="App-section">Online Advertising</section>
       <footer className="App-footer">Footer </footer>
     </div>
   );
-}
+}; return <GoogleSection />;}
 
 export default App;
