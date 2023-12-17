@@ -216,7 +216,7 @@ function App() {
  </div>
 </section>
 
-
+{/* section 6 */}
       <section className="App-section">
         <div className="google_section">
           <div className="gba_title">
@@ -227,10 +227,9 @@ function App() {
             <div className="google_image_three"><img className="img_three_google" src="/assets/302.png"></img></div>
             <div className="google_image_four"><img className="img_four_google" src="/assets/303.png"></img></div>
         </div>
-        
         </section>
 
-
+{/* section 7 */}
       <section className="App-section">Online Advertising</section>
       <footer className="App-footer">Footer </footer>
     </div>
