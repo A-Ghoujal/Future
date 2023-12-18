@@ -119,11 +119,6 @@ function App() {
              and gain insights into customer behavior, playing a significant role in boosting credibility and customer engagement.
             </div>
           </p>
-          <p className="logo-background_five">
-            <span>Ads</span>
-            <div className="description">Advertising is key for businesses, enhancing brand visibility, reaching new customers, and driving sales.
-             It's essential for market differentiation and long-term success, making it a fundamental component of business growth.</div>
-          </p>
         </div>
       </section>
 
@@ -290,8 +285,8 @@ function App() {
   </div>
 </section>
 
-{/* section 7 */}
-      <section className="App-section">Online Advertising</section>
+{/* Footer */}
+      
       <footer className="App-footer">Footer </footer>
     </div>
   );
