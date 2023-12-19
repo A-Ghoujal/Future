@@ -620,6 +620,7 @@ svg text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 2rem;
   gap: 2.1rem;
   flex-direction: column;
   background-color: #d9d7d74e;
@@ -711,6 +712,40 @@ svg text {
 .text_four:hover{
   scale: 1.2;
   transition: 1s;
+}
+@media (max-width: 768px) {
+  .img_one_google {
+    width: 21rem; 
+    height: 13rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img_two_google {
+    width: 12rem;
+    height: auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img_three_google {
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img_four_google {
+    width: 21rem;
+    height: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* footer */

@@ -201,11 +201,11 @@ function App() {
   <div className="title_create_website">
     <h1 className="title_create_website_">Your Own Website</h1>
     <p className="title_create_website__">
-      Expand your business horizons with your own website!
-      It's the key to unlocking a global audience, available 24/7,
-      and it simplifies customer engagement. In the digital era,
-      a website is your business's beacon, guiding customers right to your doorstep.
-      Embrace the power of the web and watch your business soar!
+      1-Expand your business horizons with your own website.<br></br>
+      2-It's the key to unlocking a global audience, available 24/7
+      and it simplifies customer engagement. In the digital era.<br></br>
+      3-Guiding customers right to your doorstep.<br></br>
+      4-Embrace the power of the web and watch your business soar!
     </p>
   </div>
   <div className="gallery_right">
